@@ -8,6 +8,7 @@ import { UsersApp } from "./src/UsersApp";
 const Proyec00 = () => {
   return (
     <div className="proyec_00">
+      <h1>Probando modificar con react</h1>
       <UsersApp />
       <hr />
       <ListadoApp />
