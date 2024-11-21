@@ -1,0 +1,30 @@
+.proyec_00 {
+  background-color: #222;
+  color: #ddd;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+button {
+  background-color: #48e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  &:hover {
+    background-color: #17f;
+  }
+}
+
+input {
+  /* background-color: red; */
+  border: none;
+  padding: 0.3rem;
+  &::placeholder {
+    color: #222;
+  }
+}
+
+.fondo {
+  background-color: #111;
+  border-radius: 0.5rem;
+}

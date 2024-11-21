@@ -1,0 +1,155 @@
+/* ********** Custom Properties ********** */
+:root {
+  --bg-nav-bar: #161617cc;
+  --bg-principal: #1c1c1c;
+  --bg-gris-claro: #e4e4e4;
+
+  /* * filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) */
+  --marcador: #fff5;
+
+  --first-color: #1089c7;
+  --first-alpha-color: #15a;
+  --second-color: #ff0;
+  --second-alpha-color: #929200;
+  --third-color: #f00;
+  --third-alpha-color: #a50000;
+  --white-color: #fff;
+  --gray-light-color: #e4e4e4;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #2997ff;
+  --title-color: #333;
+  --text-color: #222;
+  --white-alpha-color: #fff8;
+  --black-alpha-color: #0008;
+
+  --font: system-ui, "Segoe UI" "Open Sans", "Helvetica Neue", sans-serif;
+  --font-second: "Helvetica", sans-serif;
+  --max-width: 1024px;
+  --header-height: 4rem;
+
+  --step-64: clamp(3.875rem, 3.8295rem + 0.2273vw, 4rem);
+  --step-54: clamp(3.25rem, 3.1875rem + 0.3125vw, 3.375rem);
+  --step-48: clamp(2.875rem, 2.8295rem + 0.2273vw, 3rem);
+  --step-44: clamp(2.625rem, 2.5625rem + 0.3125vw, 2.75rem);
+  --step-36: clamp(2.125rem, 2.0625rem + 0.3125vw, 2.25rem);
+  --step-32: clamp(1.875rem, 1.8295rem + 0.2273vw, 2rem);
+  --step-24: clamp(1.375rem, 1.3125rem + 0.3125vw, 1.5rem);
+  --step-20: clamp(1.125rem, 1.0625rem + 0.3125vw, 1.25rem);
+  --step-16: clamp(0.875rem, 0.8125rem + 0.3125vw, 1rem);
+  --step-13: clamp(0.6875rem, 0.625rem + 0.3125vw, 0.8125rem);
+  --step-12: clamp(0.625rem, 0.5795rem + 0.2273vw, 0.75rem);
+  --step-11: clamp(0.5625rem, 0.5rem + 0.3125vw, 0.6875rem);
+  --step-9: clamp(0.4375rem, 0.392rem + 0.2273vw, 0.5625rem);
+  --step-8: clamp(0.375rem, 0.3295rem + 0.2273vw, 0.5rem);
+  --step-4: clamp(0.125rem, 0.0795rem + 0.2273vw, 0.25rem);
+}
+
+/* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-family: "Inter";
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* background-color: #222; */
+  /* color: #ddd; */
+  font-family: "Inter";
+}
+
+a {
+  max-width: max-content;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+figure {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  font-size: var(--step-44);
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: var(--step-32);
+  color: lime;
+
+  > span {
+    font-weight: 300;
+  }
+}
+h3 {
+  margin: 0;
+  font-size: var(--step-20);
+}
+h4 {
+  margin: 0;
+  font-size: var(--step-16);
+}
+h5 {
+  margin: 0;
+  font-size: var(--step-13);
+}
+h6 {
+  margin: 0;
+  font-size: var(--step-11);
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  font-size: var(--step-13);
+  letter-spacing: 0.05rem;
+  line-height: var(--step-16);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  font-size: var(--step-13);
+  letter-spacing: 0.05rem;
+  line-height: var(--step-16);
+}
+
+hr {
+  border: none;
+  background-image: linear-gradient(to right, blueviolet, blueviolet, magenta);
+  height: 0.25rem;
+}
+
+button {
+  font-family: "Inter";
+  font-weight: 600;
+  outline: none;
+  border: 1px solid #17f;
+  background-color: #18f;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
