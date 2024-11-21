@@ -11,7 +11,7 @@ function App() {
       <Proyec00 />
       <HooksApp />
       {/* <ReactRouter /> */}
-      {/* <CarritoApp /> */}
+      <CarritoApp />
     </>
   );
 }
