@@ -10,8 +10,8 @@ function App() {
       <h1>App</h1>
       <Proyec00 />
       <HooksApp />
-      <ReactRouter />
-      <CarritoApp />
+      {/* <ReactRouter /> */}
+      {/* <CarritoApp /> */}
     </>
   );
 }
